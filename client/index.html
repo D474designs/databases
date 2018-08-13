@@ -1,0 +1,152 @@
+<!doctype html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>ChatterBox!</title>
+      <link rel="stylesheet" href="styles/styles.css">
+
+      <script src="bower_components/jquery/dist/jquery.js"></script>
+
+      <script src="env/config.js"></script>
+      <script src="scripts/app.js"></script>
+    </head>
+    <body>
+      <div id="main">
+        <h1>D474designs</h1>
+        <div class="spinner"><img src="images/spiffygif_46x46.gif"></div>
+        <div id="rooms">
+          Room:
+          <select id="roomSelect">
+          </select>
+        </div>
+        <form action="#" id="send" method="post">
+          <input class="text" type="message" id="message">
+          <input class="submit" type="submit" value="Submit">
+        </form>
+        <button id="button" class="clearChat">Clear Chat </button>
+        <button class="refreshChat">Refresh Chat </button>
+        <button class="makeNewRoom">Make New Room</button>
+        </div
+      <div id="chats"></div>
+      <script>
+      $(function(){
+        app.init()
+      });
+    </script>
+  </body>
+</html>
+
+
+
+<!-- <!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>chatterbox</title>
+    <link rel="stylesheet" href="styles/styles.css">
+
+
+    <script src="bower_components/jquery/jquery.min.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
+
+    <script src="env/config.js"></script>
+    <script src="scripts/app.js"></script>
+  </head>
+
+  <body>
+    <div id="main">
+      <h1>chatterbox</h1>
+
+
+
+      <select id="roomSelect">
+        <option value="lobby">lobby</option>
+      </select>
+
+      <br>Username: <span class="username2"> </span><br>
+
+      <form action="#" id="send" method="post">
+        Chat message:
+        <input type='text' name='message2' class="message2">
+        <div id="send">
+          <input class="submit" type="submit" value="Submit">
+        </div>
+      </form>
+
+      <div id="chats"></div>
+
+    </div>
+  </body>
+</html> -->
+
+
+<!-- <button type="button">Click Me!</button>
+      $("p").click(function(){
+          $(this).hide();
+      }); -->
+
+<!-- <!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="utf-8">
+    <title>chatterbox</title>
+    <link rel="stylesheet" href="styles/styles.css">
+
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/jquery/dist/underscore.js"></script>
+    <script>
+      // YOU DO NOT NEED TO EDIT THIS CODE
+      if (!/(&|\?)username=/.test(window.location.search)) {
+        var newSearch = window.location.search;
+        if (newSearch !== '' & newSearch !== '?') {
+          newSearch += '&';
+        }
+        newSearch += 'username=' + (prompt('What is your name?') || 'anonymous');
+        window.location.search = newSearch;
+      }
+    </script>
+
+    <script>
+    $( function() {
+      $( ".widget input[type=submit], .widget a, .widget button" ).button();
+      $( "button, input, a" ).click( function( event ) {
+        event.preventDefault();
+      } );
+    } );
+    </script>
+
+      <script src="env/config.js"></script>
+      <script src="scripts/app.js"></script>
+
+  </head>
+  <body>
+    <center>
+    <div id="main">
+      <h1>ChatterBox</h1>
+
+      <select id="roomSelect">
+        <option value="lobby">Public Lobby</option>
+      </select>
+
+      <div class="messageBox">
+      <input type="text" id="messageInput" placeholder="Type your message here!" size="70"></input>
+      <button id="sendButton">Submit Messages</button>
+      <div>
+        <input type="text" id="roomInput" placeholder="Pick your room" size="15"></input>
+        <button id="roomButton">Switch Rooms</button>
+      </div>
+
+      <input id="addFriend" type="button" value="Frandz" onclick="handleUsernameClick();" />
+
+<ul class="messages">
+
+
+    </div>
+    <div style="background-color:lightGreen" id="chats"></div>
+    <h3>powered by <a href="https://D474designs.webs.com">D474designs</A></h3>
+  </center>
+  </body>
+</html> -->
