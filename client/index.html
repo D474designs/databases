@@ -23,9 +23,9 @@
           <input class="text" type="message" id="message">
           <input class="submit" type="submit" value="Submit">
         </form>
-        <button id="button" class="clearChat">Clear Chat </button>
-        <button class="refreshChat">Refresh Chat </button>
-        <button class="makeNewRoom">Make New Room</button>
+        <button id="button" class="clearChat" onclick="app.clearMessages();">Clear Chat</button>
+        <button class="refreshChat" onclick="app.renderMessages();">Refresh Chat</button>
+        <button class="makeNewRoom" onclick="app.renderRoom();">Make New Room</button>
         </div
       <div id="chats"></div>
       <script>

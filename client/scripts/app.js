@@ -65,12 +65,14 @@ var app = {
         }
       })
       .forEach(app.renderMessage);
+      console.log('Deez');
 
     app.stopSpinner();
   },
 
   clearMessages: function() {
     app.$chats.html('');
+    console.log('Deez');
   },
   renderMessage: function(message) {
     var $chat = $('<div class="chat"/>');
@@ -140,7 +142,9 @@ var app = {
   renderRoom: function(roomname) {
     var $option = $('<option/>').val(roomname).text(roomname);
 
-    app.$roomSelect.appen($option);
+    app.$roomSelect.append($option);
+
+    console.log('Deez');
   },
 
   handleRoomChange: function(event) {
